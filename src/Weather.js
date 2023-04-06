@@ -34,7 +34,7 @@ export default function Weather(props) {
   if (loaded) {
     return (
       <div className="Weather">
-        <div className="container">
+        <div className="container p-4">
           <div className="row">
             <div className="col-md-6">
               <h1>{city}</h1>
@@ -70,31 +70,33 @@ export default function Weather(props) {
                   />
                 </div>
               </form>
-              <div className="col-6 weatherNow">
-                <ul>
-                  <li classNames="tempNow">
-                    <strong>{Math.round(weather.temperature)}</strong>
-                    <a href="/" className="celsiusTemp">
-                      °C
-                    </a>
-                    |
-                    <a href="/" className="farenheitTemp">
-                      °F
-                    </a>
-                  </li>
-                  <li className="feelsLike">
-                    Feels like: {Math.round(weather.feels_like)} °C
-                  </li>
-                  <li className="humidity">Humidity: {weather.humidity} %</li>
-                  <li className="wind">Wind: {weather.wind} km/h</li>
-                </ul>
-              </div>
-              <div className="col-6">
-                <img
-                  src={weather.icon}
-                  alt={weather.description}
-                  className="mainWeatherPic"
-                />
+              <div className="d-flex justity-content-evenly">
+                <div className="col-6 weatherNow">
+                  <ul>
+                    <li className="tempNow">
+                      <strong>{Math.round(weather.temperature)}</strong>
+                      <a href="/" className="celsiusTemp">
+                        °C
+                      </a>
+                      |
+                      <a href="/" className="farenheitTemp">
+                        °F
+                      </a>
+                    </li>
+                    <li className="feelsLike">
+                      Feels like: {Math.round(weather.feels_like)} °C
+                    </li>
+                    <li className="humidity">Humidity: {weather.humidity} %</li>
+                    <li className="wind">Wind: {weather.wind} km/h</li>
+                  </ul>
+                </div>
+                <div className="col-6 ">
+                  <img
+                    src={weather.icon}
+                    alt={weather.description}
+                    className="mainWeatherPic img-fluid mt-5"
+                  />
+                </div>
               </div>
             </div>
           </div>

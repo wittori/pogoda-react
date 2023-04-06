@@ -3,9 +3,12 @@
   margin: 30px auto;
 }
 
-.App footer {
+.App footer,
+.App footer a {
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
+  color: #3c5058;
+  text-decoration: none;
 }
