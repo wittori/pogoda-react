@@ -1,7 +1,7 @@
 import Weather from "./Weather";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
@@ -15,19 +15,8 @@ function App() {
           >
             open-sourced on GitHub
           </a>
-          {""} and {""}
-          <a
-            href="https://candid-beignet-efde6d.netlify.app/"
-            target="-blank"
-            rel="noreferrer"
-          >
-            {" "}
-            hosted on Netlify{" "}
-          </a>
         </footer>
       </div>
     </div>
   );
 }
-
-export default App;
