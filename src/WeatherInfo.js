@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
       <div className="container p-4">
         <div className="row">
           <div className="col-md-6">
-            <h1>{props.data.city}</h1>
+            <h1 className="mb-3">{props.data.city}</h1>
             <h2>
               <span>
                 {" "}
@@ -23,7 +23,7 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-md-6">
             <div className="d-flex justity-content-evenly">
-              <div className="col-6 weatherNow">
+              <div className="col-6 weatherNow mt-5">
                 <ul>
                   <li className="tempNow">
                     <strong>{Math.round(props.data.temperature)}</strong>
@@ -48,7 +48,7 @@ export default function WeatherInfo(props) {
                 <img
                   src={props.data.icon}
                   alt={props.data.description}
-                  className="mainWeatherPic img-fluid mt-5"
+                  className="mainWeatherPic img-fluid mt-5 "
                 />
               </div>
             </div>
