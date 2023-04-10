@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -24,17 +25,10 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-md-6">
             <div className="d-flex justity-content-evenly">
-              <div className="col-6 weatherNow mt-5">
+              <div className="col-md-6 weatherNow mt-5">
                 <ul>
-                  <li className="tempNow">
-                    <strong>{Math.round(props.data.temperature)}</strong>
-                    <a href="/" className="celsiusTemp">
-                      °C
-                    </a>
-                    |
-                    <a href="/" className="farenheitTemp">
-                      °F
-                    </a>
+                  <li className="temperatureNow">
+                    <WeatherTemperature celsius={props.data.temperature} />
                   </li>
                   <li className="feelsLike">
                     Feels like: {Math.round(props.data.feels_like)} °C
@@ -45,7 +39,7 @@ export default function WeatherInfo(props) {
                   <li className="wind">Wind: {props.data.wind} km/h</li>
                 </ul>
               </div>
-              <div className="col-6 ">
+              <div className="col-md-6 ">
                 <div className="mt-5 pt-5 ps-4">
                   <WeatherIcon code={props.data.icon} />
                 </div>

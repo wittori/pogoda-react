@@ -49,21 +49,24 @@
   line-height: 1.8;
 }
 .Weather .weatherNow {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Times New Roman", serif;
   margin: 0px auto;
   padding: 20px 0;
   color: #e9edf1;
 }
-.Weather .tempNow {
-  font-size: 36px;
+.Weather .temperatureNow {
+  font-size: 38px;
   font-weight: bold;
   text-shadow: 2px 2px 2px rgb(72, 65, 65);
 }
-.Weather .celsiusTemp,
-.Weather .farenheitTemp {
-  color: #e9edf1;
-  text-decoration: none;
+.Weather .unit a {
+  color: rgb(195, 236, 221);
 }
+.Weather .unit {
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .Weather .feelsLike,
 .Weather .humidity,
 .Weather .wind {
