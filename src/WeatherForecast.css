@@ -1,0 +1,16 @@
+.WeatherForecast {
+  text-align: center;
+  color: #e9edf1;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px rgb(72, 65, 65);
+  opacity: 0.9px;
+}
+.WeatherForecast-day {
+  margin-bottom: 10px;
+}
+.WeatherForecast-temperature-min {
+  opacity: 0.7;
+  margin-left: 5px;
+}

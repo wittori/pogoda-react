@@ -61,6 +61,7 @@
 }
 .Weather .unit a {
   color: rgb(195, 236, 221);
+  text-decoration: none;
 }
 .Weather .unit {
   font-size: 30px;
