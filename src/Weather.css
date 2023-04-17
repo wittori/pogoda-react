@@ -32,16 +32,7 @@
   border-radius: 8px;
   padding: 5px 20px;
 }
-.Weather .currentLocationButton {
-  text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-size: 18px;
-  color: #e9edf1;
-  background: #558abc;
-  border: 1px solid #445174;
-  border-radius: 8px;
-  padding: 5px 13px;
-}
+
 .Weather ul {
   list-style: none;
   margin: 40 auto;

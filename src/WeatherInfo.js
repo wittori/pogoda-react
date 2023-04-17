@@ -18,10 +18,6 @@ export default function WeatherInfo(props) {
             </h2>
             <br />
             <h3 className="text-capitalize">{props.data.description}</h3>
-            <br />
-            <button type="submit" className="currentLocationButton">
-              Current location
-            </button>
           </div>
           <div className="col-md-6">
             <div className="d-flex justity-content-evenly">
